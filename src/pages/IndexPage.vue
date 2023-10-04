@@ -2,15 +2,23 @@
   <div class="htmlClass">
     <h1>{{ title }}</h1>
   </div>
+  <InputPage></InputPage>
 </template>
 
 
 <script>
+import InputPage from './InputPage.vue';
+import FunctionPage from '../pages/FunctionPage.vue'
+
 export default {
   name: 'HtmlComponent',
+  components:{
+    InputPage,
+    FunctionPage
+},
   data() {
     return {
-      title: 'Vue is awesome.',
+      title: 'Tipyada',
     }
   },
 }
